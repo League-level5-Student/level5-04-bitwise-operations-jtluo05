@@ -55,8 +55,30 @@ public class DecimalToBinary {
 		 *  *hint* https://en.wikipedia.org/wiki/Two%27s_complement
 		 * 
 		*/
+		String binary=convertDecimalToBinary(19);
+		String s="";
+		for (int i = 0; i < 8- binary.length(); i++) {
+			s+="0";
+		}
+		s+=binary;
+
+		String newS="";
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i)=='0') {
+				newS+="1";
+			}
+			else if (s.charAt(i)=='1') {
+				newS+="0";
+			}
+		}
+	String finalS="";
+	for (int i = 0; i < newS.length()-1; i++) {
+		finalS+= newS.charAt(i);
+	}
+	finalS+="1";	
 		
-		System.out.println( convertDecimalToBinary( 43 ) );
+		
+		System.out.println( finalS );
 	}
 	
     public static String convertDecimalToBinary(int decimalNum) {
