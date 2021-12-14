@@ -55,7 +55,7 @@ public class DecimalToBinary {
 		 *  *hint* https://en.wikipedia.org/wiki/Two%27s_complement
 		 * 
 		*/
-		String binary=convertDecimalToBinary(19);
+		String binary=convertDecimalToBinary(32);
 		String s="";
 		for (int i = 0; i < 8- binary.length(); i++) {
 			s+="0";
