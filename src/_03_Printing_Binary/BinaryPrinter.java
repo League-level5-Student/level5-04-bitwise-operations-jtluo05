@@ -68,7 +68,7 @@ public class BinaryPrinter {
 	public static void printLongBinary(long l) {
 		// Use the same method as before to complete this method
 		printIntBinary((short) (l&0xFFFFFFFF));
-		printIntBinary((short) ((l&0xFFFFFFFF00000000)>>32));
+		printIntBinary((short) ((l&0xFFFFFFFF00000000L)>>32));
 	}
 
 	public static void main(String[] args) {
@@ -79,6 +79,7 @@ public class BinaryPrinter {
 		printShortBinary(v);
 		int i= (int) 0b01010101010101010101010101010101;
 		printIntBinary(i);
-		long l=(long) 0b0101010101010101010101010101010101010101010101010101010101010101;
+		long l=(long) 0b0101010101010101010101010101010101010101010101010101010101010101L;
+		printLongBinary(l);
 	}
 }
