@@ -37,6 +37,7 @@ public class Base64Decoder {
 	
 	//1. Complete this method so that it returns the the element in
 	//   the base64Chars array that corresponds to the passed in char.
+	//change
 	public static byte convertBase64Char(char c){
 		char fin = 0;
 		for (int i = 0; i < base64Chars.length; i++) {
